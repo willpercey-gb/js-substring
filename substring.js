@@ -1,4 +1,4 @@
-const substring = (document, start, end) => {
+export const substring = (document, start, end) => {
     let start_pos = document.indexOf(start);
     let end_pos = document.indexOf(end);
     if (start_pos === -1){
@@ -12,5 +12,3 @@ const substring = (document, start, end) => {
     }
     return document.substring(start_pos, end_pos);
 };
-
-export default {substring};
